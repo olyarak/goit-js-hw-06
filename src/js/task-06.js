@@ -4,7 +4,7 @@ const length = Number(input.dataset.length);
 input.addEventListener("blur", onValidateInput);
 
 function onValidateInput(event) {
-  if (input.value.split("").length === length) {
+  if (input.value.trim().split("").length === length) {
     input.classList.add("valid");
     input.classList.remove("invalid");
   } else {
